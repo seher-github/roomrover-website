@@ -181,7 +181,7 @@
                     </div>
                     <div class="col-md-6">
                         <h1 class="text-white mb-4">Book A Tour</h1>
-                        <form>
+                        <form method="post">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -191,7 +191,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control bg-transparent" id="lastname" placeholder="Your Name">
                                         <label for="name">last Name</label>
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control bg-transparent" id="no" placeholder="Your Number">
                                         <label for="name">Phone Number</label>
                                     </div>
                                 </div>
@@ -216,12 +216,12 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select bg-transparent" id="select1">
-                                            <option value="1">Standard Single Room</option>
-                                            <option value="2">Family Suite</option>
-                                            <option value="3">friends special package</option>
-                                            <option value="3">Wedding special</option>
-                                            <option value="3">one night package</option>
-                                            <option value="3">Honeymoon Package</option>
+                                            <option value="Standard Single Room">Standard Single Room</option>
+                                            <option value="Family Suite">Family Suite</option>
+                                            <option value="Friends special package">Friends special package</option>
+                                            <option value="Wedding special">Wedding special</option>
+                                            <option value="One night package">One night package</option>
+                                            <option value="Honeymoon Package">Honeymoon Package</option>
                                         </select>
                                         <label for="select1">Destination</label>
                                     </div>
@@ -233,8 +233,10 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+                                    <button class="btn btn-outline-light w-100 py-3" id="submitbtn" type="submit">Book Now</button>
                                 </div>
+
+                                <div id="response"></div>
                             </div>
                         </form>
                     </div>
